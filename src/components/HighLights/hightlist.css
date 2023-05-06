@@ -1,0 +1,16 @@
+.hightlight {
+    width: 100%;
+    max-width: var(--main-width);
+    margin: 78px auto;
+  }
+
+  .highlight-section-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .hightlight-menu-list {
+    display: flex;
+    justify-content: space-between;
+  }

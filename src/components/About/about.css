@@ -1,0 +1,42 @@
+.about-us {
+    display: flex;
+    gap: 15px;
+    padding: 40px 0;
+    height: 280px;
+    margin-bottom: 25px;
+}
+
+.images-col {
+    position: relative;
+    width: 60%;
+}
+
+.text-col {
+    width: 38%;
+}
+
+.text-col h2 {
+    margin-bottom: 0px;
+}
+
+.image-wrapper {
+    width: 70%;
+    margin: 0px;
+    position: absolute;
+    bottom: -40px;
+}
+
+.image-wrapper img {
+    width: 100%;
+}
+
+.image-wrapper:first-of-type {
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    right: 0px;
+}
+
+/* .image-wrapper:hover {
+    z-index: 2;
+} */

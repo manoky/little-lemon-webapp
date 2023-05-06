@@ -1,0 +1,19 @@
+.star-rating  {
+    display: flex;
+}
+
+
+.grey path {
+    fill: var(--gray);
+}
+
+.gold path {
+    fill: #ffd700;
+}
+
+
+#star {
+    width: 15px;
+    height: 15px;
+    margin-right: 2px;
+}

@@ -1,0 +1,45 @@
+/* Hero */
+.hero {
+    width: 100%;
+    background-color: var(--ll-green);
+    height: 400px;
+    padding-top: 23px;
+    grid-area: main;
+  }
+
+  .hero-inner {
+    width: 100%;
+    max-width: var(--main-width);
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .hero-image {
+    width: 350px;
+    height: 446px;
+    border-radius: 16px;
+  }
+
+  .hero-header {
+    font-size: var(--large-header-size);
+    color: var(--ll-yellow);
+    margin-bottom: 0;
+  }
+
+  .hero-city {
+    color: var(--white);
+    font-size: var(--medium-header-size);
+    margin-top: 10px;
+    display: inline-block;
+  }
+
+  .hero-subtitle {
+    color: var(--white);
+    width: 260px;
+  }
+
+  .hero-btn {
+    padding: 19px 24px;
+  }

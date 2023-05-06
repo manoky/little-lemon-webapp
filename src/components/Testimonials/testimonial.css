@@ -1,0 +1,32 @@
+.testimonial {
+    background-color: var(--white);
+    width: 33%;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid var(--gray-bg);
+}
+
+.testimonial figure {
+    width: 100px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    margin: 10px 0 0 0;
+
+}
+
+.testimonial img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    object-fit: cover;
+}
+
+.testimonial figcaption {
+    margin-left: 10px;
+}
+
+.testimonial-list {
+    display: flex;
+    gap: 15px;
+}
