@@ -97,6 +97,7 @@ code {
   color: var(--ll-green);
   border-radius: 8px;
   border: none;
+  cursor: pointer;
 }
 
 

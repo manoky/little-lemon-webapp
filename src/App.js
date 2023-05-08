@@ -1,13 +1,13 @@
 import './App.css'
 import { Footer } from './components/Footer'
-import { Main } from './Main'
 import { Header } from './Header'
+import { RootRoutes } from './RootRoutes'
 
 function App() {
   return (
     <>
       <Header />
-      <Main />
+      <RootRoutes />
       <Footer />
     </>
   )

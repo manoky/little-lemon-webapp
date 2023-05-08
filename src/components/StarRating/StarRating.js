@@ -43,7 +43,12 @@ export const StarRating = ({ rated, count }) => {
     <div className="star-rating">
       {[...Array(count).keys()].map((key) => {
         const currentKey = key + 1
-        return <Star starClass={currentKey <= rated ? 'gold' : 'grey'} />
+        return (
+          <Star
+            starClass={currentKey <= rated ? 'gold' : 'grey'}
+            key={currentKey}
+          />
+        )
       })}
     </div>
   )

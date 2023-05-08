@@ -42,4 +42,6 @@
 
   .hero-btn {
     padding: 19px 24px;
+    display: inline-block;
+    text-decoration: none;
   }

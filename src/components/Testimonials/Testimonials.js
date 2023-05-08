@@ -7,12 +7,14 @@ import './testimonials.css'
 
 const testimonials = [
   {
+    id: 1,
     name: 'James Smith',
     rating: 5,
     review: 'The meal was awesome, the people are warm and welcoming',
     avatar: james,
   },
   {
+    id: 2,
     name: 'Mary Jean',
     rating: 5,
     review:
@@ -20,6 +22,7 @@ const testimonials = [
     avatar: mary,
   },
   {
+    id: 3,
     name: 'Paul Jones',
     rating: 4,
     review: 'The ordering process was straight forward, very user friendly',
@@ -27,6 +30,7 @@ const testimonials = [
   },
 
   {
+    id: 4,
     name: 'Tonia Miller',
     rating: 5,
     review: 'Quality food nothing beats that, on top of beautiful warm people',
@@ -46,6 +50,7 @@ export const Testimonials = () => {
               rating={item.rating}
               name={item.name}
               avatar={item.avatar}
+              key={item.id}
             />
           ))}
         </div>
