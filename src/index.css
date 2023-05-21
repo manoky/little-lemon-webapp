@@ -21,6 +21,10 @@ body {
   font-size: var(--base-font-size);
 }
 
+*:after, *:before{
+  box-sizing: border-box;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -44,6 +48,8 @@ code {
   width: 100%;
   max-width: var(--main-width);
   margin: 0 auto;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
 /* Header (Navigation) */
@@ -91,7 +97,7 @@ code {
 /* Button */
 
 .btn {
-  padding: 19px 24px;
+  padding: 16px 24px;
   font-size: var(--medium-header-size);
   background-color: var(--ll-yellow);
   color: var(--ll-green);

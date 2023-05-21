@@ -1,0 +1,25 @@
+.booking-slot {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    box-shadow: 1px 1px var(--gray);
+}
+
+.booking-slot__pill {
+    padding: 6px;
+    box-sizing: border-box;
+    border-radius: 16px;
+    font-size: 14px;
+    color: var(--white);
+}
+
+.booking-slot__pill.booked {
+    background-color: red;
+}
+
+.booking-slot__pill.available {
+    background-color: var(--ll-green);
+}

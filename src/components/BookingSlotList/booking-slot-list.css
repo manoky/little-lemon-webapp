@@ -1,0 +1,21 @@
+.booking-slot-list {
+    width: 40%;
+    background-color: var(--gray-bg);
+    margin-top: 60px;
+    color: #343a40;
+    border-radius: 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.booking-slot-list > h2 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+.booking-slot-list__info {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
