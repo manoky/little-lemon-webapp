@@ -5,19 +5,19 @@ export const Nav = () => (
         <a href="/">Home</a>
       </li>
       <li className="nav-item">
-        <a href="/about">About</a>
+        <a href="/#about">About</a>
       </li>
       <li className="nav-item">
-        <a href="/contact">Contact</a>
+        <a href="/#contact">Contact</a>
       </li>
       <li className="nav-item">
-        <a href="/menu">Menu</a>
+        <a href="/#menu">Menu</a>
       </li>
       <li className="nav-item">
-        <a href="/reserve">Reservations</a>
+        <a href="/booking">Reservations</a>
       </li>
       <li className="nav-item">
-        <a href="/order">Order Online</a>
+        <a href="/#testimonials">Testimonials</a>
       </li>
     </ul>
   </nav>

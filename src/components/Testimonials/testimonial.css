@@ -1,6 +1,6 @@
 .testimonial {
     background-color: var(--white);
-    width: 33%;
+    width: 100%;
     padding: 20px;
     border-radius: 8px;
     border: 1px solid var(--gray-bg);
@@ -26,7 +26,8 @@
     margin-left: 10px;
 }
 
-.testimonial-list {
-    display: flex;
-    gap: 15px;
+@media screen and (min-width: 768px) {
+    .testimonial {
+        width: 33%;
+    }
 }

@@ -1,0 +1,131 @@
+/* Header (Navigation) */
+
+.navbar {
+    display: none;
+    position: absolute;
+    top: 79px;
+    left: 16px;
+    background-color: white;
+    width: 250px;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 1px 1px var(--gray);
+    z-index: 20;
+}
+
+.navigation {
+    height: 60px;
+    grid-area: nav;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 16px;
+    border-bottom: 1px solid var(--gray-bg);
+    position: relative;
+}
+
+.nav-logo-link {
+    padding: 19px 24px;
+    display: inline-block;
+    text-decoration: none;
+    justify-self: center;
+}
+
+.humberger-menu {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 16px;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+
+.humberger-menu:hover ~ .navbar {
+    display: initial;
+}
+
+.navbar:hover {
+    display: block;
+}
+
+.humberger-menu-item {
+    width: 100%;
+    border-bottom: 3px solid #333;
+    margin: 5px;
+}
+
+
+.navigation-inner {
+    width: var(--main-width);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+
+.nav-items-list {
+    width: 100%;
+    list-style: none;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    padding: 5px 0;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: #333;
+}
+
+.main-content {
+    grid-area: main;
+    margin: 0 auto;
+    width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+
+    .navigation {
+        height: 60px;
+        grid-area: nav;
+        font-size: 16px;
+        width: 100%;
+        padding-top: 16px;
+        border-bottom: 1px solid var(--gray-bg);
+    }
+
+    .navigation-inner {
+        width: var(--main-width);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .nav-items-list {
+        width: 100%;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(6, auto);
+        margin: 0;
+        padding: 0;
+        gap: 15px;
+    }
+
+    .navbar {
+        width: 100%;
+        text-align: right;
+        display: initial;
+        position: initial;
+        background-color: initial;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .humberger-menu  {
+        display: none;
+    }
+
+}

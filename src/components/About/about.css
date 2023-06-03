@@ -2,41 +2,39 @@
     display: flex;
     gap: 15px;
     padding: 40px 0;
-    height: 280px;
     margin-bottom: 25px;
+    padding: 0 15px;
+    flex-wrap: wrap;
 }
 
 .images-col {
-    position: relative;
-    width: 60%;
+    width: 100%;
 }
 
 .text-col {
-    width: 38%;
+    width: 100%;
 }
 
 .text-col h2 {
     margin-bottom: 0px;
 }
 
-.image-wrapper {
-    width: 70%;
-    margin: 0px;
-    position: absolute;
-    bottom: -40px;
-}
+
 
 .image-wrapper img {
     width: 100%;
+    border-radius: 8px;
 }
 
-.image-wrapper:first-of-type {
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    right: 0px;
+
+
+@media screen and (min-width: 768px) {
+    .text-col {
+        width: 38%;
+    }
+
+    .images-col {
+        width: 60%;
+    }
 }
 
-/* .image-wrapper:hover {
-    z-index: 2;
-} */

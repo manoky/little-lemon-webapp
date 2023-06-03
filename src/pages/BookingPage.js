@@ -8,6 +8,7 @@ export const BookingPage = ({
   availableTimes,
   onDateBooked,
   onSubmit,
+  loading,
 }) => {
   return (
     <section className="container booking-page">
@@ -27,6 +28,7 @@ export const BookingPage = ({
         onDateBooked={onDateBooked}
         availableTimes={availableTimes}
         onSubmit={onSubmit}
+        loading={loading}
       />
     </section>
   );

@@ -2,8 +2,7 @@
 .hero {
     width: 100%;
     background-color: var(--ll-green);
-    height: 400px;
-    padding-top: 23px;
+    padding: 23px 15px 0;
     grid-area: main;
   }
 
@@ -14,6 +13,11 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+  }
+
+  .hero-inner section, .hero-inner aside {
+    width: 100%;
+    margin-bottom: 40px;
   }
 
   .hero-image {
@@ -37,11 +41,26 @@
 
   .hero-subtitle {
     color: var(--white);
-    width: 260px;
+    width: 90%;
   }
 
   .hero-btn {
     padding: 19px 24px;
     display: inline-block;
     text-decoration: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hero-inner section, .hero-inner aside {
+      width: 50%;
+    }
+
+    .hero {
+      height: 400px;
+    }
+
+    .hero-subtitle {
+      color: var(--white);
+      width: 260px;
+    }
   }

@@ -1,7 +1,7 @@
 import { Route, Routes, useNavigate } from "react-router-dom";
 import { HomePage, BookingPage } from "./pages";
 import { useAvailableTimes } from "./context";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { fetchAPI, submitAPI } from "./utils/fetchUtils";
 import { ConfirmationPage } from "./pages/ConfirmationPage";
 
@@ -14,8 +14,11 @@ export const initializeTimes = (date = new Date()) => {
 };
 
 export const Main = () => {
+  const [loading, setLoading] = useState(false);
+
   const { availableTimes, dispatch } = useAvailableTimes();
   const navigate = useNavigate();
+
   const handleInitTimes = () => {
     dispatch({ type: "INIT_TIMES", payload: initializeTimes() });
   };
@@ -24,18 +27,21 @@ export const Main = () => {
     dispatch({ type: "UPDATE_TIMES", payload: updateTimes(date) });
   };
   const handleBookedDate = (time) => {
-    console.log({ time });
     dispatch({ type: "MARK_BOOKED", payload: time });
   };
 
   const submitForm = (formData) => {
-    console.log("Submitted");
+    setLoading(true);
     submitAPI(formData);
-    navigate("/confirmation");
+    setTimeout(() => {
+      setLoading(false);
+      navigate("/confirmation");
+    }, 2000);
   };
 
   useEffect(() => {
     handleInitTimes();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
@@ -49,6 +55,7 @@ export const Main = () => {
             updateTimes={handleUpdateTimes}
             onDateBooked={handleBookedDate}
             onSubmit={submitForm}
+            loading={loading}
           />
         }
       />

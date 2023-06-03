@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom'
-import restauranfood from '../../assets/images/restauranfood.jpg'
-import './hero.css'
+import { Link } from "react-router-dom";
+import restauranfood from "../../assets/images/restauranfood.jpg";
+import "./hero.css";
 
 export const Hero = () => {
   return (
@@ -13,7 +13,7 @@ export const Hero = () => {
             We are a family owned Mediterranean restaurant, focused on
             traditional recipes served with a modern twist.
           </p>
-          <Link className="hero-btn btn" to="/booking">
+          <Link className="hero-btn btn" to="/booking" aria-label="On Click">
             Reserve a Table
           </Link>
         </section>
@@ -22,5 +22,5 @@ export const Hero = () => {
         </aside>
       </div>
     </article>
-  )
-}
+  );
+};

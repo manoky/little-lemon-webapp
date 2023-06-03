@@ -1,7 +1,7 @@
 import './footer.css'
 
 export const Footer = () => (
-  <footer className="footer">
+  <footer className="footer" id="contact">
     <article className="container footer-inner">
       <section className="footer-section-item">
         <h2>Navigation</h2>

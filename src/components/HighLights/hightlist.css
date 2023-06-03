@@ -4,6 +4,10 @@
     margin: 78px auto;
   }
 
+  .highlight-section-header, .hightlight-menu-list {
+    padding: 0 15px;
+  }
+
   .highlight-section-header {
     display: flex;
     justify-content: space-between;
@@ -13,4 +17,21 @@
   .hightlight-menu-list {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .menu-card {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    .hightlight-menu-list {
+      flex-wrap: nowrap;
+    }
+
+    .menu-card {
+      width: 265px;
+      margin-right: 10px;
+    }
   }

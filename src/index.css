@@ -51,49 +51,6 @@ code {
   padding: 16px;
   box-sizing: border-box;
 }
-
-/* Header (Navigation) */
-
-.navbar {
-  width: 100%;
-  text-align: right;
-}
-
-.navigation {
-  height: 60px;
-  grid-area: nav;
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  font-size: 16px;
-  width: var(--main-width);
-  margin: auto;
-}
-
-.nav-items-list {
-  width: 100%;
-  list-style: none;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  margin: 0;
-  padding: 0;
-  gap: 15px;
-}
-
-
-.nav-item a {
-  text-decoration: none;
-  color: #333;
-}
-
-.main-content {
-  grid-area: main;
-  margin: 0 auto;
-  width: 100%;
-
-}
-
-
 /* Button */
 
 .btn {
@@ -106,7 +63,10 @@ code {
   cursor: pointer;
 }
 
-
+.btn:disabled {
+  filter: grayscale(90%);
+  cursor: not-allowed;
+}
 
 
 

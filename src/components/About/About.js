@@ -1,10 +1,9 @@
 import './about.css'
 import MandA from '../../assets/images/MarioandAdrianA.jpg'
-import Rest from '../../assets/images/restaurant.jpg'
 
 export const About = () => {
   return (
-    <article className="about-us container">
+    <article className="about-us container" id="about">
       <section className="text-col">
         <h2>Little Lemon</h2>
         <span>Chicago</span>
@@ -19,9 +18,6 @@ export const About = () => {
       <aside className="images-col">
         <figure className="image-wrapper">
           <img src={MandA} alt="" />
-        </figure>
-        <figure className="image-wrapper">
-          <img src={Rest} alt="" />
         </figure>
       </aside>
     </article>

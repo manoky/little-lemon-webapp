@@ -6,7 +6,7 @@ import './hightlist.css'
 
 export const HighLights = () => {
   return (
-    <article className="hightlight">
+    <article className="hightlight" id="menu">
       <section className="highlight-section-header">
         <h2>This weeks special!</h2>
         <button className="btn">Online Menu</button>
